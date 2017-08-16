@@ -1,11 +1,11 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <body>
 <header>
-  <div class="navbar-fixed">
     <nav class="  blue darken-4" role="navigation">
       <div class="nav-wrapper container">
         <a id="logo-container" href= "./" class="brand-logo">IEEE UMich</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <ul class="right hide-on-med-and-down">
+        <li><a href="./">Home</a></li>
         <li><a href="https://xulab.bme.umich.edu/">UFFC</a></li>
           <li><a [routerLink]="['/events']">Events</a></li>
           <li><a [routerLink]="['/dbcafe']">db Cafe</a></li>
@@ -14,9 +14,18 @@
 
         </ul>
 
+        <ul id="nav-mobile" class="side-nav">
+        <li><a href="./">Home</a></li>
+        <li><a href="https://xulab.bme.umich.edu/">UFFC</a></li>
+          <li><a [routerLink]="['/events']">Events</a></li>
+          <li><a [routerLink]="['/dbcafe']">db Cafe</a></li>
+          <li><a [routerLink]="['/officers']">Officers</a></li>
+          <li><a href="http://goo.gl/forms/1BWevBzmrV">Membership</a></li>
+
+        </ul>
+        <a href="./" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
       </div>
     </nav>
-  </div>
 </header>
 
 <main>
